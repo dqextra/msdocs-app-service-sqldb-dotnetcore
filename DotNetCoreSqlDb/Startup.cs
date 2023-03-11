@@ -29,7 +29,8 @@ namespace DotNetCoreSqlDb
         {
             services.AddControllersWithViews();
             services.AddDbContext<MyDatabaseContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+                    options.UseSqlServer(Configuration.GetConnectionString("
+Server=dailiyfacts-server.postgres.database.azure.com;Database=dailiyfacts-database;Port=5432;Ssl Mode=Require;User Id=zrsrlsswak;Password=4Y24PT8WU07H30M6$")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
